@@ -1,5 +1,6 @@
 /*Importación de clases*/
 import {Cliente} from './Cliente.js'
+import { Cuenta } from './Cuenta.js';
 import { cuentaAhorro } from './cuentaAhorro.js';
 import { CuentaCorriente } from './CuentaCorriente.js';
 
@@ -11,14 +12,8 @@ const cuentaDeMaria = new CuentaCorriente(cliente2, '2', '002');
 
 const cuentaAhorroLeonardo = new cuentaAhorro(cliente, '9985', '001');
 
-console.log(cuentaDeLeonardo);
-cuentaDeLeonardo.depositoEnCuenta(1500);
-console.log(cuentaDeLeonardo.verSaldo());
-cuentaDeLeonardo.retirarDeCuenta(500);
-console.log(cuentaDeLeonardo.verSaldo());
+const cuentaSimple = new Cuenta(cliente, '098', '001', 100);
+
+console.log(cuentaSimple);
 
 console.log(cuentaAhorroLeonardo);
-cuentaAhorroLeonardo.depositoEnCuenta(1500);
-console.log(cuentaAhorroLeonardo.verSaldo());
-cuentaAhorroLeonardo.retirarDeCuenta(500);
-console.log(cuentaAhorroLeonardo.verSaldo());
