@@ -12,10 +12,13 @@ const cuentaDeMaria = new CuentaCorriente(cliente2, '2', '002');
 const cuentaAhorroLeonardo = new cuentaAhorro(cliente, '9985', '001');
 
 console.log(cuentaDeLeonardo);
-
 cuentaDeLeonardo.depositoEnCuenta(1500);
 console.log(cuentaDeLeonardo.verSaldo());
 cuentaDeLeonardo.retirarDeCuenta(500);
 console.log(cuentaDeLeonardo.verSaldo());
 
-console.log(cuentaDeLeonardo);
+console.log(cuentaAhorroLeonardo);
+cuentaAhorroLeonardo.depositoEnCuenta(1500);
+console.log(cuentaAhorroLeonardo.verSaldo());
+cuentaAhorroLeonardo.retirarDeCuenta(500);
+console.log(cuentaAhorroLeonardo.verSaldo());
