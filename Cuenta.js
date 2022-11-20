@@ -30,7 +30,7 @@ export class Cuenta{
     }
 
     retirarDeCuenta(valor) {
-        _retirarDeCuenta(valor, 0);
+        throw new Error('Debe implementar el metodo retirarDeCuenta en su clase');
     }
 
     _retirarDeCuenta(valor, comision) {
